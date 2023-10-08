@@ -1,0 +1,3 @@
+BEGIN
+select * from `example_dataset.t_users`;
+END
