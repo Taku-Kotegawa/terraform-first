@@ -28,7 +28,7 @@ resource "google_bigquery_table" "t_users" {
 # ---------------------------------------------------------
 
 
-// マート作成
+// マート更新
 
 resource "google_bigquery_routine" "read_t_users" {
   dataset_id = google_bigquery_dataset.dataset.dataset_id
