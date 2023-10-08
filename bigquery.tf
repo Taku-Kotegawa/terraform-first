@@ -35,7 +35,7 @@ resource "google_bigquery_routine" "read_t_users" {
   routine_id      = "read_t_users"
   routine_type    = "PROCEDURE"
   language        = "SQL"
-  definition_body = file("./procedure/read_t_users.txt")
+  definition_body = file("./procedure/read_t_users.bq")
 }
 
 resource "google_bigquery_routine" "read_t_users2" {
@@ -43,7 +43,7 @@ resource "google_bigquery_routine" "read_t_users2" {
   routine_id      = "read_t_users2"
   routine_type    = "PROCEDURE"
   language        = "SQL"
-  definition_body = file("./procedure/read_t_users.txt")
+  definition_body = file("./procedure/read_t_users.bq")
 }
 
 
